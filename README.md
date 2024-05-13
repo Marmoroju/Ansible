@@ -1,6 +1,6 @@
-<h2>O Ansible se comunica com os servidores remotos através de SSH.
+<h3>O Ansible se comunica com os servidores remotos através de SSH.
 Não precisa de agente instalado nos servidores remotos.
-Mas é necessário instalar o Python nos servidores gerenciados pelo Control-Node</h2>
+Mas é necessário instalar o Python nos servidores gerenciados pelo Control-Node</h3>
 <hr>
 <h3>Base box = Centos 7</h3>
 <p>https://app.vagrantup.com/centos/boxes/7</p>
