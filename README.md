@@ -5,7 +5,7 @@ Mas é necessário instalar o Python nos servidores gerenciados pelo Control-Nod
 <h3>Base box = Centos 7</h3>
 <p>https://app.vagrantup.com/centos/boxes/7</p>
 
-<h3>Base box = 20.04 LTS</h3>
+<h3>Base box = Ubuntu 20.04 LTS</h3>
 <p>https://app.vagrantup.com/ubuntu/boxes/focal64</p>
 
 <h3>Base box =  Windows 10 versão 22H2</h3>
