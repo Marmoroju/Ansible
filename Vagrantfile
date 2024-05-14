@@ -10,9 +10,7 @@ Vagrant.configure("2") do |config|
             v.cpus = 2
         end
     end
-end
 
-Vagrant.configure("2") do |config|
     config.vm.define "Jenkins" do |vm_jenkins|
         vm_jenkins.vm.box = "centos/7"
         vm_jenkins.vm.network "private_network", ip: "192.168.56.11"
@@ -22,10 +20,8 @@ Vagrant.configure("2") do |config|
             v.memory = 1024
             v.cpus = 2
         end
-    end    
-end
+    end   
 
-Vagrant.configure("2") do |config|
     config.vm.define "Docker" do |vm_docker|
         vm_docker.vm.box = "ubuntu/focal64"
         vm_docker.vm.network "private_network", ip: "192.168.56.12"
@@ -36,11 +32,9 @@ Vagrant.configure("2") do |config|
             v.cpus = 1
         end
     end
-end
-
-Vagrant.configure("2") do |config|
-    config.vm.boot_timeout = 60
+    
     config.vm.define "Windows" do |vm_windows|
+        vm_windows.config.vm.boot_timeout = 60
         vm_windows.vm.box = "Win10v22H2x64"
         vm_windows.vm.hostname = "Windows"
         vm_windows.vm.provider "virtualbox" do |v|
