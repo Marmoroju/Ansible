@@ -1,6 +1,7 @@
-#!bin/sh
+#!/bin/sh
+
 cat << EOT >> /home/vagrant/.ssh/authorized_keys
 
-"cole aqui a hash completa"
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0cW12+Os1qzfGJgPpwN7TA90afnk+ZQGPQeoJ5RycwRMkCSZ9MY+1nObUujEmjMcEpZ/3jrUVc3qJeQPrYdI1C3u1L/DPu7AbeRlcZVpFw/H4xtLKlrs3CDDwPBQGfRlxRcJU/ygCn8Q+9SwypCX267RsBtHo/28Ovg9MuceDjuedK063argLkPF9A2viX2XU1JGgGYkakDzpJU+fdKtB+HONPJKpWTJ9ouSkAARqFkX356LJ0jtBovipH+ZxWprn7EO6vGQGsSYS3QRcJ9qnLIrL1jm+hlsXAZK/CuIpagPmp4YtCLKIJ0O1TDg9rhu2Mpz7VQDc5D2rPimGRmlz vagrant@ansible
 
 EOT
