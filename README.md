@@ -6,8 +6,8 @@ para isso será necessário ter instalado o Python nos servidores (Workers) gere
 
 <h4><b><i>Passo a Passo - Entendendo o Ambiente</b></i></h4>
 
-<p>1 - Dentro do diretório raiz Ansible estão os arquivos de configuração do Control-Node e<br>
-dentro do diretório Workers estão as VM que serão gerenciadas pelo Ansible (Control-Node)</p>
+<p>1 - Dentro do diretório Control-Node estão os arquivos de configuração do Ansible e<br>
+dentro do diretório Workers estão os arquivos de configuração das VM que serão gerenciadas pelo Ansible (Control-Node)</p>
 
 <p>2 - A primeira etapa será iniciar o Control-Node para realizar sua configuração de inventário <br>
 e gerar a chave de confiança. O Passo a passo está no tópico "<b><i>CONFIGURAÇÃO ANSIBLE</b></i>"</p>
