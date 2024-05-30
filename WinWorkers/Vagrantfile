@@ -1,0 +1,12 @@
+Vagrant.configure("2") do |config|
+    config.vm.boot_timeout = 60
+    config.vm.define "Windows" do |vm_windows|
+        vm_windows.vm.box = "Win10v22H2x64"
+        vm_windows.vm.hostname = "windows"
+        vm_windows.vm.provider "virtualbox" do |v|
+            v.name = "Worker_Windows"
+            v.memory = 4096
+            v.cpus = 2
+        end
+    end
+end
