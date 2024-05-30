@@ -10,7 +10,7 @@ sudo yum -y install pip3
 sudo pip3 install wheel
 sudo pip3 install pywinrm
 
-#Kerberus somente se utilizar algum AD.
+#Kerberus somente se utilizar algum AD
 #sudo pip3 install pywinrm[kerberos]
 
 
