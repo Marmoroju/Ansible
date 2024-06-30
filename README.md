@@ -185,6 +185,25 @@ receber os comandos do Ansible.
 8. Crie um Vagrantfile para iniciar a máquina virtual:
 - `vagrant init Win10v22H2x64`
 
+## Configuração de Rede - VM Windows
+### Passo 01 - Virtual Box
+- No virtual box, com a imagem do windows `Desligada`:
+01. Configurações
+02. Rede
+03. Adaptador 1 (Deixar somente um adaptador habilitado)
+04. Placa em Modo Bridge
+05. Avançado - Modo Promíscuo - Permitir Tudo
+06. Habilitar "Cabo Conectado"
+07. Ligar VM Windows
+
+### Passo 02 - Dentro da VM
+01. Acessar Propriedades da Internet 
+02. Protocolo IPv4
+03. Adicionar IP, Máscara e Gateway de acordo com sua rede local.
+04. Acessar Central de Rede e Compartilhamento
+05. Alterar as configurações de compartilhamento avançadas
+06. Habilitar Descoberta de Rede (Particular e Convidade ou Público)
+
 ## Habilitar WinRm [Windows Remote Manager]
 
 - Saiba mais em: https://docs.ansible.com/ansible/latest/collections/ansible/windows/index.html
@@ -193,17 +212,12 @@ receber os comandos do Ansible.
 
 1. Habilitar no VirtualBox as opções `Bi-direcional` de `Área de Transferência Compartilhada`e `Arrastar e Soltar` 
 
-2. Habilitar o `Adapdator 2` da Placa de Rede como `Placa de rede exclusiva de hospedeiro (host-only)`,
-`Modo Promíscuo` manter recusado.
+2. Acesse a VM Windows, abra o PowerShell, caso esteja instalado e execute o comando `$PSVersiontable`, caso a versão seja `>=7` será preciso baixar uma nova versão.
 
-3. O IP da VM Windows será o valor do `Servidor DHCP IPv4`
-
-4. Acesse a VM Windows, abra o PowerShell, caso esteja instalado e execute o comando `$PSVersiontable`, caso a versão seja `>=7` será preciso baixar uma nova versão.
-
-5. Na VM Windows, acesse o navegador e `realize o download e instalação` da versão atual do PowerShell compatível com seu sistema operacional.
+3. Na VM Windows, acesse o navegador e `realize o download e instalação` da versão atual do PowerShell compatível com seu sistema operacional.
 - `Link:` https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.4
 
-6. 
+
 
 
 
